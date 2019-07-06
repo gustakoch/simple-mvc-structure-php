@@ -72,7 +72,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Gustavo Koch** - *Initial work* - [PurpleBooth](https://github.com/gustakoch)
+* **Gustavo Koch** - *Initial work* - [gustakoch](https://github.com/gustakoch)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
