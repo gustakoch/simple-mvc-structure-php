@@ -2,14 +2,13 @@
 
 namespace App\Controllers;
 
-use GK\Controller\Action;
-use GK\Model\Container;
+use Resources\Controller\Action;
+use Resources\Model\Container;
 
 use App\Models\Produto;
 use App\Models\Info;
 
 class IndexController extends Action {
-
     public function index() {
         $produto = Container::getModel('Produto');
         $this->view->dados = $produto->getProdutos();
@@ -25,5 +24,4 @@ class IndexController extends Action {
     public function receitas() {
         $this->render('receitas', 'Layout');
     }
-
 }

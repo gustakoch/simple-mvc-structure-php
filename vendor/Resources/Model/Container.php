@@ -1,11 +1,10 @@
 <?php
  
-namespace GK\Model;
+namespace Resources\Model;
 
 use App\ConnectionDatabase;
 
 class Container {
-
     public static function getModel($model) {
 
         $conn = ConnectionDatabase::getDatabase();
@@ -13,5 +12,4 @@ class Container {
 
         return new $class($conn);
     }
-    
 }

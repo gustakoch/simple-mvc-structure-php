@@ -1,9 +1,8 @@
 <?php
  
-namespace GK\Controller;
+namespace Resources\Controller;
 
 abstract class Action {
-  
     protected $view;
 
     public function __construct() {
