@@ -6,9 +6,6 @@ use Resources\Model\Model;
 
 class Info extends Model {
     public function getInfo() {
-        $sql = " 
-            SELECT titulo, descricao FROM tb_info";
-            
-        return $this->database->query($sql)->fetchAll();
+        echo "This is rended by the content in the standard layout";
     }
 }

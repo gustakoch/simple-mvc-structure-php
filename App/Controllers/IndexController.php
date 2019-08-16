@@ -10,18 +10,8 @@ use App\Models\Info;
 
 class IndexController extends Action {
     public function index() {
-        $produto = Container::getModel('Produto');
-        $this->view->dados = $produto->getProdutos();
+        $produto = Container::getModel('Info');
+        $this->view->dados = $produto->getInfo();
         $this->render('index', 'Layout');
-    }
-  
-    public function about() {
-        $info = Container::getModel('Info');
-        $this->view->info = $info->getInfo();
-        $this->render('about', 'Layout');
-    }
-  
-    public function receitas() {
-        $this->render('receitas', 'Layout');
     }
 }
